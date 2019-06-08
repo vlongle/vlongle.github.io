@@ -25,20 +25,28 @@
                     <p class="left"> In my free time, I also write math blogs. Check out <a href = "http://euclidclub.blogspot.com/" target="_blank">the one</a> I wrote during high school!</p>
                     <p class="left"> Here, I also posted some of my study notes for a variety of subjects below.</p>
 
+                    <a href="./math/analysis.html">Real Analysis | </a>
+                    <a href="./math/measure_theory.html">Measure Theory |</a>
+                    <a href="./math/stochastic_process.html">Stochastic Process</a> <br>
+                    <a href="./math/nonlinear_dynamics.html">Non-linear Dynamics | </a>
+                    <a href="./math/number_theory.html">Number Theory</a>
                 </div>
             </div>
 
         </div>
-    <div class="navbar">
-  <a href="./index.html" class="active">Home</a>
-  <a href="./math/analysis.html">Real Analysis</a>
-  <a href="./math/measure_theory.html">Measure Theory</a>
-  <a href="./math/stochastic_process.html">Stochastic Process</a>
-  <a href="./math/nonlinear_dynamics.html">Non-linear Dynamics</a>
-  <a href="./math/number_theory.html">Number Theory</a>
 
-</div>
 
         <script type="text/javascript" src="js/lorenz.js"></script>
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myNavbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
+
     </body>
 </html>
