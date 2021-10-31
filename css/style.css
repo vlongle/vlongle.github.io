@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
+div.parent {
+	text-align: center;
+	}
+ul { 
+	display: inline-block; 
+	text-align: left; 
+	}
+
 body {
   background-color: #18181d			;
   /* background-color: black			; */
