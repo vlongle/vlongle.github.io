@@ -1,5 +1,5 @@
     body {
-            margin-top: 20px;
+            margin-top: 0px;
         }
         .card-img-exp {
             margin-top:40px;
@@ -14,18 +14,18 @@
         }         
 
         .candidates-profile-bg {
-            padding: 180px 0px 80px 0px;
+            padding: 60px 0px 80px 0px;
             background-image: url("https://www.bootdey.com/img/Content/bg1.jpg");
             background-size: cover;
             position: relative;
             background-position: center center;
         }
 
+
         .candidates-profile-details .candidates-profile-name {
             font-weight: 300;
         }
-/* 
-        .candidates-profile-icons .list-inline-item {
+        /* .candidates-profile-icons .list-inline-item {
             margin: 0 1px !important;
         } */
 
