@@ -1,0 +1,161 @@
+    body {
+            margin-top: 20px;
+        }
+
+        .img-thumbnail{        
+            width: 200px; 
+            height: 200px;
+        }         
+
+        .candidates-profile-bg {
+            padding: 180px 0px 80px 0px;
+            background-image: url("https://www.bootdey.com/img/Content/bg1.jpg");
+            background-size: cover;
+            position: relative;
+            background-position: center center;
+        }
+
+        .candidates-profile-details .candidates-profile-name {
+            font-weight: 300;
+        }
+/* 
+        .candidates-profile-icons .list-inline-item {
+            margin: 0 1px !important;
+        } */
+
+        .candidates-profile-social-icons li a {
+            height: 64px;
+            width: 64px;
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            font-size: 30px;
+            display: inline-block;
+            line-height: 60px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        .candidates-profile-social-icons li a:hover {
+            background-color: #ff4f6c;
+            color: #ffffff;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            border-color: #ff4f6c;
+        }
+
+        .profile-education-icon {
+            border: 1px solid #ececec;
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            font-size: 42px;
+            border-radius: 50px;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background-color: #ffffff;
+            color: #ff4f6c;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        .candidates-profile-education {
+            padding: 64px 24px 24px;
+        }
+
+        .candidates-profile-education:hover .profile-education-icon {
+            background-color: #ff4f6c;
+            border: 1px solid #ff4f6c;
+            color: #ffffff;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        .job-details {
+            padding: 210px 0px 60px 0px;
+            background-image: url("../images/job-details-bg.jpg");
+            background-size: cover;
+            position: relative;
+            background-position: center center;
+        }
+
+        .job-detail {
+            font-size: 18px;
+            border: 1px solid #ececec;
+            border-radius: 6px;
+        }
+
+        .job-details-desc-item p {
+            overflow: hidden;
+        }
+
+        .job-detail-icons li {
+            margin: 2px !important;
+        }
+
+        .job-detail-icons li a {
+            height: 32px;
+            width: 32px;
+            color: #ff4f6c;
+            text-align: center;
+            font-size: 15px;
+            display: inline-block;
+            line-height: 30px;
+            border-radius: 50%;
+            border: 1px solid #ff4f6c;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        .job-detail-icons li a:hover {
+            background-color: #ff4f6c;
+            color: #ffffff;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        .job-detail-time li {
+            padding: 10px 4px;
+            border-top: 1px solid #ececec;
+        }
+
+        .job-detail-time li:first-child {
+            border-top: none;
+        }
+
+        .section {
+            padding-bottom: 80px;
+            padding-top: 80px;
+            position: relative;
+        }
+
+
+
+/* https://mdbootstrap.com/docs/standard/tools/design/gradients/ */
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to left, rgba(106, 17, 203, 0.9), rgba(37, 117, 252, 0.9));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to left, rgba(106, 17, 203, 0.9), rgba(37, 117, 252, 0.9))
+  }
+
+  .gradient-custom-2{
+    /* fallback for old browsers */
+    background: #a6c0fe;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(166, 192, 254, 1), rgba(246, 128, 132, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(166, 192, 254, 1), rgba(246, 128, 132, 1))
+  } 
+

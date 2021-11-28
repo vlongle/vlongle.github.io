@@ -1,75 +1,204 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Long Le's Homepage">
-        <meta name="author" content="Long Le">
-        <link rel="shortcut icon" href="favicon.ico">
-        <title>Long Le's Homepage</title>
-    </head>
-    <body class="pl">
-        <canvas id="canvas" width="900" height="600">
-        </canvas>
-        <div id="content">
-            <div class="c">
-                <div class="circular centered"></div>
-                <div class="h">I'm Long Le</div>
-                <div class="i">
-                    <p class="left"> I am a senior in Computer Science and Statistics at UMass Amherst. After graduation, I'll be joining <a href="https://www.google.com/"> Google</a> in Mountain View as a software engineer. </p>
-                    <h2 id="research">Research and Work</h2>
-                    <div style="width: 75%; margin-left: auto; margin-right: auto;">
-                        <ul>
-                            <li> (Future) Spring 2022: <a href="https://www.google.com/"> Google.</a> </li>
-                            <li>Summer 2021 - present: Social Artificial Intelligence at <a href = "https://riss.ri.cmu.edu/meet-the-2021-ri-summer-scholars/"> CMU Robotics Institute</a> with Prof. <a href = "http://www.cs.cmu.edu/~sycara/"> Katia Sycara</a> .</li>
-                            <li>Fall 2021 - present: Game Theory with Prof. <a href = "https://people.umass.edu/yzick/"> Yair Zick</a> </li>
-                            <li>Summer 2020: <a href="https://engineering.fb.com/"> Facebook</a> Ads Team for Instagram</li>
-                            <li>Summer 2019: ML in Computational Neuroscience with Prof. <a href = "https://people.math.umass.edu/~yaoli/"> Yao Li</a> </li>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
+    <!--  All snippets are MIT license http://bootdey.com/license -->
+    <title>Long Le's Webpage</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#experience").load("experience.html");
+            $("#education").load("education.html");
+            $("#publication").load("pub.html");
+            $("#blog").load("blog.html");
+        });
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.css"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+        integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+        integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+
+    <section class="candidates-profile-bg">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="candidates-profile-details text-center">
+                        <img src="./assets/imgs/avatar.png"
+                            class="img-fluid d-block mx-auto rounded-circle img-thumbnail mb-4">
+                        <p class="text-white candidates-profile-name mb-2 display-3">Long Le</p>
+                        <p class="text-white-50 mb-2 h3"><i class="mdi mdi-bank mr-2"></i>University of Massachusetts
+                            Amherst</p>
+                        <ul class="candidates-profile-icons list-inline mb-3">
+                            <li class="list-inline-item text-white-50 pr-2 f-16 h3">AI Researcher</li>
+                        </ul>
+
+                        <ul class="candidates-profile-social-icons list-inline mb-0">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/long-le-a0aaa7121/"
+                                    target="_blank" class=""><i class="mdi mdi-linkedin-box"></i></a>
+                            <li class="list-inline-item"><a href="https://github.com/vlongle" target="_blank"
+                                    class=""><i class="mdi mdi-github-box"></i></a>
+                            <li class="list-inline-item"><a
+                                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                                    target="_blank" class=""><i class="mdi mdi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a
+                                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                                    target="_blank" class=""><i class="mdi mdi-google-plus"></i></a>
+                            </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- contact info -->
-                    <p class="left">Email ............................. <a href = "mailto: lnle@umass.edu" >lnle@umass.edu</a></p>
-<!--                     <p class="left">Resume .................................. <a href = "./test_resume.pdf"  target="_blank">resume</a></p> -->
-                    <p class="left">Github ............................. <a href = "https://github.com/vlongle"  target="_blank">vlongle</a></p>
-                    <p class="left"> In my free time, I also write math blogs. Check out <a href = "http://euclidclub.blogspot.com/" target="_blank">the one</a> I wrote during high school!</p>
-                    <p class="left"> Here, I also posted some of my (rough) study notes for a variety of subjects below.</p>
+    <section class="section">
 
-
-                    <p class="left"> <a href="./math/analysis.html">Real Analysis | </a>
-                        <a href="./math/measure_theory.html">Measure Theory |</a>
-                        <a href="./math/stochastic_process.html">Stochastic Process</a></p>
-                    <p class="left">
-                        <a href="./math/nonlinear_dynamics.html">Non-linear Dynamics | </a>
-                        <a href="./math/number_theory.html">Number Theory | </a>
-                         <a href="./math/fourier.html">Fourier Analysis</a>
-                     </p>
-                     <p class="left">
-                         <a href="./math/randomized.html">Randomized Algs | </a>
-                         <a href="./writing/speech.pdf">Speech Survey | </a>
-                         <a href="./writing/CS_685_Project_Progress_Report_1_.pdf">Gender Analysis </a>
-                    </p>
-                    <p class="left">
-                         <a href="./writing/590OP_Final_Report.pdf">Movies Recommender | </a>
-                         <a href="./writing/610_Bayesian_report.pdf">Lung Cancer Model | </a>
-                         <a href="./writing/USA Networks.ipynb">Disease Networks </a>
-                    </p>
-                    <p class="left">
-                         <a href="./writing/math_697AM_report.pdf">Image Denoising | </a>
-                         <a href="./writing/resume.pdf">Resume </a>
-
-                      </p>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span style="font-size: 30px;">Email: </span><span style="font-size: 30px;"> <a
+                            href="mailto: lnle@umass.edu">lnle@umass.edu</a></span>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-dark">About Me</h1>
                 </div>
             </div>
 
-        </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="job-detail mt-2 p-4">
+                        <div class="job-detail-desc">
+                            <p class="text-muted f-14 mb-3">Hi! I'm Long Le. I'm a senior in Computer
+                                Science and Mathematics at <a href="https://www.umass.edu/" target="_blank"> UMass
+                                    Amherst</a>. I'm
+                                interested in many areas
+                                of AI. I think it'd be cool if we can build AI that is as smart as the robot Baymax from
+                                Disney's <a href="https://www.imdb.com/title/tt2245084/" target="_blank">Big Hero 6</a>
+                                movie. I'm orginally from <a
+                                    href="https://www.youtube.com/watch?v=94y6svVU4so&ab_channel=quynhvalentine"
+                                    target="_blank"> Vietnam</a>. I like
+                                cooking and
+                                swimming in my free time.</p>
+
+                            <p class="text-muted f-14 mb-0"> After graduation, I'll be joining <a
+                                    href="https://www.google.com/" target="_blank" class="text-muted">Google</a> as a
+                                software engineer. During college, I've the opportunities to do research with Professor
+                                <a href="https://www.ri.cmu.edu/ri-faculty/katia-sycara/" target="_blank">Katia
+                                    Sycara</a> from the
+                                <a href="https://www.ri.cmu.edu/" target="_blank">Robotics Institute, Carnegie
+                                    Mellon University</a>, and
+                                Professor
+
+                                <a href="https://people.umass.edu/yzick/" target="_blank">Yair Zick</a> and Professor
+                                <a href="https://people.math.umass.edu/~yaoli/" target="_blank">Yao Li</a> from
+                                <a href="https://www.umass.edu/" target="_blank"> UMass
+                                    Amherst</a>. I've also spent a summer at <a href="https://engineering.fb.com/"
+                                    target="_blank"> Facebook</a> (now
+                                known as
+                                Meta, lol Zucc
+                                &#128514).
+                            </p>
+                        </div>
+                        <hr>
+                        <ul class="list-inline mt-3 mb-0">
+                            <li class="list-inline-item mr-3">
+                                <a class="text-muted f-15 mb-0"> <strong>Research Interests </strong>:</a>
+                            </li>
+
+                            <li class="list-inline-item mr-3">
+                                <a class="text-muted f-15 mb-0"> <i class="mdi mdi-star"
+                                        style="color:#ffc107!important"></i>Artificial Intelligence</a>
+                            </li>
+
+                            <li class="list-inline-item mr-3">
+                                <a class="text-muted f-15 mb-0"> <i class="mdi mdi-star"
+                                        style="color:#ffc107!important"> </i>Mutli-agent Systems</a>
+                            </li>
+
+                            <li class="list-inline-item mr-3">
+                                <a class="text-muted f-15 mb-0"> <i class="mdi mdi-star"
+                                        style="color:#ffc107!important"> </i>Machine Learning</a>
+                            </li>
 
 
-        <script type="text/javascript" src="js/lorenz.js"></script>
+                            <li class="list-inline-item mr-3">
+                                <a class="text-muted f-15 mb-0"> <i class="mdi mdi-star"
+                                        style="color:#ffc107!important"> </i>Sequential Decision Making</a>
+                            </li>
 
 
-    </body>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-dark mt-4 mb-4">Education</h1>
+                </div>
+            </div>
+
+            <div id="education"></div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-dark mb-4">Experience</h1>
+                </div>
+            </div>
+
+
+            <div id="experience"> </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-dark mb-4">Publications</h1>
+                </div>
+            </div>
+
+            <div id="publication"> </div>
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-dark mb-4">Miscellaneous Writing</h1>
+                </div>
+            </div>
+
+            <div id="blog"> </div>
+            <!-- Footer -->
+            <!-- https://mdbootstrap.com/docs/standard/navigation/footer/ -->
+            <footer class="gradient-custom-2 text-center text-white fixed-bottom">
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2021 Copyright: Long Le (All rights reserved). Adapted from <a
+                        href="https://www.bootdey.com/snippets/download/bs4-light-resume-page"> Bootdey</a>.
+                </div>
+                <!-- Copyright -->
+            </footer>
+
+</body>
+
 </html>
