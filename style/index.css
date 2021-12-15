@@ -141,8 +141,8 @@
 
         /* https://getbootstrap.com/docs/4.0/utilities/spacing/ */
         .section {
-            margin-left: 200px;
-            margin-right: 200px;
+            /* margin-left: 200px;
+            margin-right: 200px; */
             padding-bottom: 10px;
             padding-top: 10px;
             position: relative;
