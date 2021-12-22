@@ -1,3 +1,7 @@
+.navbar-toggler-icon {
+    background-image: url(data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000…p='round' stroke-miterlimit='10' d='M47h22M4 15h22M423h22'/%3e%3c/svg%3e);
+    }
+
         .card-img-exp {
             margin-top:20px;
             width: 100%;
