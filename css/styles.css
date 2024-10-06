@@ -53,27 +53,52 @@ nav a {
    Hero Section
    ============================ */
 
+
+   /* Hero Section */
 .hero {
-    position: relative;
+    position: relative; /* Make hero the containing block */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('../assets/images/long_le_photo.png') no-repeat center center/cover;
     text-align: center;
     padding-top: 60px; /* Adjust for fixed navbar */
+    overflow: hidden; /* Hide any overflow */
 }
 
-.hero::after {
-    content: '';
-    position: absolute;
+/* Position the canvas within the hero section */
+#particle-canvas {
+    position: absolute; /* Changed from fixed to absolute */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(13, 13, 13, 0.6); /* Semi-transparent overlay */
+    z-index: 0;
+    pointer-events: none; /* Allow clicks through the canvas */
+    background: linear-gradient(to bottom, #000000, #1d1c1c); /* Gradient background */
 }
+
+/* Ensure the hero content appears above the canvas */
+.hero h1,
+.hero p,
+.hero-buttons {
+    position: relative;
+    z-index: 2; /* Higher z-index to appear above the overlay */
+    color: #FFFFFF;
+}
+
+
+
+/* Ensure the hero content appears above the canvas */
+.hero h1,
+.hero p,
+.hero-buttons {
+    position: relative;
+    z-index: 2; /* Higher z-index to appear above the overlay */
+    color: #FFFFFF;
+}
+
 
 .hero h1,
 .hero p,
