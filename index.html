@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Long Le | Robotics PhD Student</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Research</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1 id="hero-title"></h1>
+        <p id="sub-message"></p>
+        <div class="hero-buttons">
+            <button onclick="document.getElementById('publications').scrollIntoView();">[View Research]</button>
+            <button onclick="document.getElementById('contact').scrollIntoView();">[Contact Me]</button>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-content">
+        <img src="assets/images/long_le_photo.png" alt="Long Le" class="profile-photo">
+        <p>I'm Long Le, a PhD student at the University of Pennsylvania. My research
+            focuses on
+            robot learning and autonomous systems.</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-content">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Google</h3>
+                <p>Software Engineer</p>
+                <p>2022</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Robotics Institute, CMU</h3>
+                <p>Intern</p>
+                <p>2021</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Instagram</h3>
+                <p>Intern</p>
+                <p>2020</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications-grid">
+        <h2>Research</h2>
+        <div class="grid-container">
+            <!-- Publication Card -->
+            <div class="publication-card">
+                <div class="card-front">
+                    <img src="assets/images/articulate-anything.png" alt="Publication 1">
+                </div>
+                <div class="card-back">
+                    <h3>Articulate Anything</h3>
+                    <p>A state-of-the-art method for automatically reconstructing interactable virtual objects from
+                        real-world text, images, or videos.
+                    </p>
+                    <p class="authors">Le et al</p>
+                    <p class="year">2024</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="publication-card">
+                <div class="card-front">
+                    <img src="assets/images/dcl.png" alt="Publication 1">
+                </div>
+                <div class="card-back">
+                    <h3>Distributed Continual Learning</h3>
+                    <p>A frameworkd for learning new things with multiple communicating robots.</p>
+                    <p class="authors">Le et al</p>
+                    <p class="year">2024</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-content">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:vlongle@seas.upenn.edu">vlongle@seas.upenn.edu</a></p>
+        <p>Twitter: <a target="_blank" rel="noopener noreferrer" href="https://x.com/int64_le">@int64_le</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Long Le</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
