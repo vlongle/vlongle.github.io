@@ -54,9 +54,10 @@ nav a {
    ============================ */
 
 
-   /* Hero Section */
+
+
 .hero {
-    position: relative; /* Make hero the containing block */
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,20 +65,75 @@ nav a {
     height: 100vh;
     text-align: center;
     padding-top: 60px; /* Adjust for fixed navbar */
-    overflow: hidden; /* Hide any overflow */
+    overflow: hidden;
+    background-color: #0D0D0D;
 }
 
-/* Position the canvas within the hero section */
-#particle-canvas {
-    position: absolute; /* Changed from fixed to absolute */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none; /* Allow clicks through the canvas */
-    background: linear-gradient(to bottom, #000000, #1d1c1c); /* Gradient background */
+/* Hero Title and Subtitle */
+#hero-title {
+    font-size: 3em;
+    margin: 0;
 }
+
+#sub-message {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Blinking Cursor Effect */
+#sub-message::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.hero-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: 1px solid #39FF14;
+    background-color: transparent;
+    color: #39FF14;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.hero-buttons button:hover {
+    background-color: #39FF14;
+    color: #0D0D0D;
+}
+
+/* Font Family */
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+/* Ensure the hero content appears above the canvas */
+.hero h1,
+.hero p,
+.hero-buttons {
+    position: relative;
+    z-index: 2; /* Higher z-index to appear above the canvas */
+    color: #39FF14; /* Neon green text color to match the Matrix theme */
+}
+
+
 
 /* Ensure the hero content appears above the canvas */
 .hero h1,
@@ -143,6 +199,37 @@ nav a {
         font-size: 18px;
     }
 }
+
+
+
+/* ============================
+FALLING MATRIX
+   ============================ */
+
+
+/* Matrix Canvas */
+#matrix-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    background-color: #0D0D0D; /* Ensure the background is dark */
+}
+
+/* Optional: Add a subtle background gradient */
+#matrix-canvas::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+
 
 /* ============================
    About Me Section
