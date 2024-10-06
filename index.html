@@ -8,13 +8,11 @@
 </head>
 
 <body>
-    <audio id="background-music" loop autoplay>
+    <!-- <audio id="background-music" loop autoplay>
         <source src="assets/audio/grindset.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
-    </audio>
+    </audio> -->
 
-    <!-- Music Control Button -->
-    <button id="music-control">🔊 Music On</button>
 
 
 
@@ -126,11 +124,11 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script>
+    <!-- <script>
         // JavaScript to control the music
         const music = document.getElementById('background-music');
         const musicControl = document.getElementById('music-control');
-        let isMusicPlaying = true; // Assume music is playing initially
+        let isMusicPlaying = false;
 
         function toggleMusic() {
             if (isMusicPlaying) {
@@ -142,19 +140,7 @@
             }
             isMusicPlaying = !isMusicPlaying;
         }
-
-        // Attempt to autoplay and update button state
-        music.play().then(() => {
-            musicControl.textContent = '🔊 Music On';
-        }).catch(error => {
-            console.log("Autoplay was prevented:", error);
-            isMusicPlaying = false;
-            musicControl.textContent = '🔇 Music Off';
-        });
-
-        // Add click event listener to the button
-        musicControl.addEventListener('click', toggleMusic);
-    </script>
+    </script> -->
 
 </body>
 
