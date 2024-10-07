@@ -203,7 +203,9 @@ document.addEventListener('DOMContentLoaded', () => {
             canvas.style.height = `${window.innerHeight}px`;
 
             // Characters to be used in the Matrix effect
-            const matrixChars = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズヅブプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴン';
+            // const matrixChars = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズヅブプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴン';
+            // const matrixChars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()';
+            const matrixChars = '01'
 
             // Base values for font size, speed, opacity, and tail length
             const baseFontSize = 14;
@@ -214,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Define layers for depth effect
             const layers = [
                 {
-                    count: Math.floor(window.innerWidth / 25), // Number of drops in this layer
+                    count: Math.floor(window.innerWidth / 50), // Number of drops in this layer
                     fontSize: baseFontSize * 1.5,
                     speed: baseSpeed * 1.5,
                     opacity: baseOpacity * 1,
@@ -246,7 +248,8 @@ document.addEventListener('DOMContentLoaded', () => {
             layers.forEach(layer => {
                 // Create a gradient for this layer
                 layer.gradient = ctx.createLinearGradient(0, 0, 0, canvas.height / dpr);
-                layer.gradient.addColorStop(0, '#0ABAB5'); // Cyan
+                layer.gradient.addColorStop(0, '#FF0000'); // Cyan
+                layer.gradient.addColorStop(0.5, '#0ABAB5'); // Cyan
                 layer.gradient.addColorStop(1, '#39FF14'); // Neon green
 
                 for (let i = 0; i < layer.count; i++) {
