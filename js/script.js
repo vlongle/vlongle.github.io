@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             if (isLeadingChar) {
                                 charOpacity = 1; // Fully opaque for the leading character
                                 ctx.shadowColor = 'rgba(255, 255, 255, 0.8)';
-                                ctx.shadowBlur = 10;
+                                ctx.shadowBlur = 50;
                             } else {
                                 ctx.shadowColor = 'transparent';
                                 ctx.shadowBlur = 0;
